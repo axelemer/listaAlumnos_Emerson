@@ -7,7 +7,7 @@
       >
         <app-alumno-card
           *ngFor="let alumno of alumnos"
-          nombre="{{ alumno.nombre }}"
+          nombre="{{ alumno.nombre | titlecase }}"
           nota="{{ alumno.nota }}"
         ></app-alumno-card>
       </div>
